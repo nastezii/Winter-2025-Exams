@@ -97,3 +97,13 @@ static bool IsValidName(string name)
 
     return true;
 }
+
+//sample
+
+// Get one random element from an array
+
+T GetRandomElement<T>(T[] array)
+{
+    if (array == null)
+        throw new ArgumentNullException(nameof(array), "Array can't be null.");
+}
