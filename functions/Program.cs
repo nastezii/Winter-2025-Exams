@@ -28,5 +28,6 @@
 
 List<string> FindLongestString(string[] strings)
 {
-    
+    if (strings == null)
+        throw new ArgumentNullException(nameof(strings), "Array cannot be null.");
 }
