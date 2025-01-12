@@ -1,6 +1,6 @@
 ﻿// split
 
-// split an array into two parts
+// Split an array into two parts
 
 (T[], T[]) SplitArray<T>(T[] array, int index)
 {
@@ -66,4 +66,13 @@ T[] ReverseArray<T>(T[] array)
 {
     if (array == null)
         throw new ArgumentNullException(nameof(array), "Array can't be null.");
+
+    T[] reversedArray = new T[array.Length];
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        int mirrorIndex = array.Length - 1 - i;
+        reversedArray[i] = array[mirrorIndex];
+    }
+    return reversedArray;
 }
