@@ -106,4 +106,12 @@ T GetRandomElement<T>(T[] array)
 {
     if (array == null)
         throw new ArgumentNullException(nameof(array), "Array can't be null.");
+
+    if (array.Length == 1)
+    {
+        return array[0];
+    }
+
+    Random random = new Random();
+    return array[random.Next(0, array.Length)];
 }
