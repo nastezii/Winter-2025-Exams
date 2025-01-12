@@ -9,5 +9,11 @@
 
     if (index < 0 || index > array.Length)
         throw new ArgumentOutOfRangeException(nameof(index), "Index is out of the bounds of the array.");
+
+    int firstPartLength = index + 1;
+
+    T[] firstPart = new T[firstPartLength];
+    T[] secondPart = new T[array.Length - firstPartLength];
+
 }
 
