@@ -57,3 +57,12 @@ List<string> FindLongestString(string[] strings)
 
     return longestStrings;
 }
+
+//invert
+
+// Reverse an array, without using .Reverse()
+
+T[] ReverseArray<T>(T[] array)
+{
+    
+}
