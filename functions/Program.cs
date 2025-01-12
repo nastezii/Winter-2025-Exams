@@ -115,3 +115,12 @@ T GetRandomElement<T>(T[] array)
     Random random = new Random();
     return array[random.Next(0, array.Length)];
 }
+
+//month
+
+// Get month number
+
+int GetMonthNumber(string input)
+{
+    
+}
