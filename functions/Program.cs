@@ -21,3 +21,12 @@
     return (firstPart, secondPart);
 }
 
+
+//longest
+
+// Find longest strings
+
+List<string> FindLongestString(string[] strings)
+{
+    
+}
