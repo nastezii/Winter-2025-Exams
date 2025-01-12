@@ -76,3 +76,12 @@ T[] ReverseArray<T>(T[] array)
     }
     return reversedArray;
 }
+
+//validate
+
+// Validate person name
+
+static bool IsValidName(string name)
+{
+
+}
