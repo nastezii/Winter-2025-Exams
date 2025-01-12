@@ -15,5 +15,9 @@
     T[] firstPart = new T[firstPartLength];
     T[] secondPart = new T[array.Length - firstPartLength];
 
+    Array.Copy(array, firstPart, firstPartLength);
+    Array.Copy(array, firstPartLength, secondPart, 0, secondPart.Length);
+
+    return (firstPart, secondPart);
 }
 
