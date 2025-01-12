@@ -83,5 +83,17 @@ T[] ReverseArray<T>(T[] array)
 
 static bool IsValidName(string name)
 {
+    if (string.IsNullOrWhiteSpace(name))
+        return false;
 
+    if (!name.Contains(" "))
+        return false;
+
+    foreach (char symbol in name)
+    {
+        if (symbol != ' ' && !char.IsLetter(symbol))
+            return false;
+    }
+
+    return true;
 }
