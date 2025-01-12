@@ -30,4 +30,12 @@ List<string> FindLongestString(string[] strings)
 {
     if (strings == null)
         throw new ArgumentNullException(nameof(strings), "Array cannot be null.");
+
+    List<string> longestStrings = new List<string>();
+    longestStrings.Add(strings[0]);
+
+    if (strings.Length == 1)
+    {
+        return longestStrings;
+    }
 }
