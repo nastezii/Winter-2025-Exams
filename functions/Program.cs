@@ -122,7 +122,15 @@ T GetRandomElement<T>(T[] array)
 
 int GetMonthNumber(string input)
 {
-    
+    int monthNumber = -1;
+    foreach (Months month in Enum.GetValues(typeof(Months)))
+    {
+        if (input.ToLower().StartsWith(month.ToString()))
+        {
+            monthNumber = (int)month;
+        }
+    }
+    return monthNumber;
 }
 
 enum Months
