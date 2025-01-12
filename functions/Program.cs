@@ -64,5 +64,6 @@ List<string> FindLongestString(string[] strings)
 
 T[] ReverseArray<T>(T[] array)
 {
-    
+    if (array == null)
+        throw new ArgumentNullException(nameof(array), "Array can't be null.");
 }
