@@ -38,4 +38,22 @@ List<string> FindLongestString(string[] strings)
     {
         return longestStrings;
     }
+
+    int maxLength = strings[0].Length;
+
+    for (int i = 1; i < strings.Length; i++)
+    {
+        if (strings[i].Length > maxLength)
+        {
+            longestStrings.Clear();
+            maxLength = strings[i].Length; ;
+            longestStrings.Add(strings[i]);
+        }
+        else if (strings[i].Length == maxLength)
+        {
+            longestStrings.Add(strings[i]);
+        }
+    }
+
+    return longestStrings;
 }
